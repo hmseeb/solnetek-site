@@ -122,12 +122,12 @@ ul {
 }
 
 .btn--primary {
-  background: #0f2d5e;
-  color: var(--clr-white);
+  background: var(--clr-gold);
+  color: #050d1a;
 }
 
 .btn--primary:hover {
-  background: var(--clr-gold);
+  background: #d97706;
   color: #050d1a;
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(245,158,11,0.4);
