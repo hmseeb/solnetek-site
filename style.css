@@ -1215,3 +1215,48 @@ a.contact-detail:hover {
     align-items: flex-start;
   }
 }
+
+/* ---------- Language Toggle ---------- */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  font-family: var(--font);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--clr-muted);
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition);
+  flex-shrink: 0;
+}
+
+.lang-toggle:hover {
+  border-color: var(--clr-primary);
+  color: var(--clr-text);
+}
+
+.lang-toggle__sep {
+  opacity: 0.4;
+  font-weight: 300;
+}
+
+.lang-toggle__en,
+.lang-toggle__es {
+  transition: color var(--transition);
+}
+
+.lang-toggle--active {
+  color: var(--clr-primary);
+}
+
+@media (max-width: 768px) {
+  .lang-toggle {
+    order: -1;
+    margin-right: auto;
+  }
+}

@@ -28,14 +28,20 @@
 
       <nav class="nav" id="nav" aria-label="Main navigation">
         <ul class="nav__list">
-          <li><a href="#home" class="nav__link">Home</a></li>
-          <li><a href="#services" class="nav__link">Services</a></li>
-          <li><a href="#about" class="nav__link">About</a></li>
-          <li><a href="#contact" class="nav__link">Contact</a></li>
+          <li><a href="#home" class="nav__link" data-i18n="nav-home">Home</a></li>
+          <li><a href="#services" class="nav__link" data-i18n="nav-services">Services</a></li>
+          <li><a href="#about" class="nav__link" data-i18n="nav-about">About</a></li>
+          <li><a href="#contact" class="nav__link" data-i18n="nav-contact">Contact</a></li>
         </ul>
       </nav>
 
-      <a href="#contact" class="btn btn--primary header__cta">Get Started</a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-toggle__en">EN</span>
+        <span class="lang-toggle__sep">|</span>
+        <span class="lang-toggle__es">ES</span>
+      </button>
+
+      <a href="#contact" class="btn btn--primary header__cta" data-i18n="header-cta">Get Started</a>
 
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
@@ -52,13 +58,13 @@
     <div class="container hero__content">
       <div class="hero__badge">
         <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-        Verified Credentials &bull; LCCA-Led &bull; For Growing Businesses
+        <span data-i18n="hero-badge">Verified Credentials &bull; LCCA-Led &bull; For Growing Businesses</span>
       </div>
-      <h1 class="hero__title">Cybersecurity &amp; Compliance<br /><span class="hero__title--accent">for Every Mission</span></h1>
-      <p class="hero__subtitle">Atlanta-based, LCCA-led CMMC compliance and cybersecurity consulting for the Defense Industrial Base, government agencies, and small businesses nationwide.</p>
+      <h1 class="hero__title" data-i18n="hero-title">Cybersecurity &amp; Compliance<br /><span class="hero__title--accent">for Every Mission</span></h1>
+      <p class="hero__subtitle" data-i18n="hero-subtitle">Atlanta-based, LCCA-led CMMC compliance and cybersecurity consulting for the Defense Industrial Base, government agencies, and small businesses nationwide.</p>
       <div class="hero__actions">
         <a href="#contact" class="btn btn--primary btn--lg">
-          Do the math — Get Free Assessment
+          <span data-i18n="hero-cta">Do the math — Get Free Assessment</span>
           <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
         </a>
         <a href="tel:+14044652310" class="btn btn--ghost btn--lg">
@@ -66,7 +72,7 @@
           (404) 465-2310
         </a>
       </div>
-      <p class="hero__note">0 minutes commitment &bull; LCCA-led &bull; No obligation</p>
+      <p class="hero__note" data-i18n="hero-note">0 minutes commitment &bull; LCCA-led &bull; No obligation</p>
     </div>
     <div class="hero__scroll" aria-hidden="true">
       <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
@@ -78,22 +84,22 @@
     <div class="container trust__inner">
       <div class="trust__item">
         <svg class="trust__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-        <span>LCCA-Certified Leadership</span>
+        <span data-i18n="trust-1">LCCA-Certified Leadership</span>
       </div>
       <div class="trust__divider" aria-hidden="true"></div>
       <div class="trust__item">
         <svg class="trust__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
-        <span>Certified Ethical Hacker (CEH)</span>
+        <span data-i18n="trust-2">Certified Ethical Hacker (CEH)</span>
       </div>
       <div class="trust__divider" aria-hidden="true"></div>
       <div class="trust__item">
         <svg class="trust__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
-        <span>CISSP Credentialed</span>
+        <span data-i18n="trust-3">CISSP Credentialed</span>
       </div>
       <div class="trust__divider" aria-hidden="true"></div>
       <div class="trust__item">
         <svg class="trust__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-        <span>Atlanta-Based, Nationwide Service</span>
+        <span data-i18n="trust-4">Atlanta-Based, Nationwide Service</span>
       </div>
     </div>
   </section>
@@ -102,9 +108,9 @@
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">What We Do</p>
-        <h2 class="section-title">Comprehensive Cybersecurity &amp; Compliance Services</h2>
-        <p class="section-desc">Solnetek delivers mission-critical cybersecurity solutions tailored to the unique demands of defense contractors, government agencies, and growth-stage businesses.</p>
+        <p class="section-label" data-i18n="services-label">What We Do</p>
+        <h2 class="section-title" data-i18n="services-title">Comprehensive Cybersecurity &amp; Compliance Services</h2>
+        <p class="section-desc" data-i18n="services-desc">Solnetek delivers mission-critical cybersecurity solutions tailored to the unique demands of defense contractors, government agencies, and growth-stage businesses.</p>
       </div>
 
       <div class="services__grid">
@@ -117,15 +123,15 @@
             <div class="service-card__icon" aria-hidden="true">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
             </div>
-            <h3 class="service-card__title">CMMC Compliance Consulting</h3>
-            <p class="service-card__desc">Navigate the Cybersecurity Maturity Model Certification (CMMC) framework with confidence. We guide Defense Industrial Base (DIB) contractors through every level of certification — from gap assessment to full compliance readiness.</p>
+            <h3 class="service-card__title" data-i18n="s1-title">CMMC Compliance Consulting</h3>
+            <p class="service-card__desc" data-i18n="s1-desc">Navigate the Cybersecurity Maturity Model Certification (CMMC) framework with confidence. We guide Defense Industrial Base (DIB) contractors through every level of certification — from gap assessment to full compliance readiness.</p>
             <ul class="service-card__list">
-              <li>CMMC Level 1 &amp; Level 2 Readiness</li>
-              <li>Gap Analysis &amp; Remediation Roadmap</li>
-              <li>System Security Plan (SSP) Development</li>
-              <li>SPRS Score Assessment</li>
+              <li data-i18n="s1-li1">CMMC Level 1 &amp; Level 2 Readiness</li>
+              <li data-i18n="s1-li2">Gap Analysis &amp; Remediation Roadmap</li>
+              <li data-i18n="s1-li3">System Security Plan (SSP) Development</li>
+              <li data-i18n="s1-li4">SPRS Score Assessment</li>
             </ul>
-            <a href="#contact" class="service-card__link">Get CMMC Assessment <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
+            <a href="#contact" class="service-card__link"><span data-i18n="s1-link">Get CMMC Assessment</span> <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
           </div>
         </article>
 
@@ -137,15 +143,15 @@
             <div class="service-card__icon" aria-hidden="true">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
             </div>
-            <h3 class="service-card__title">Penetration Testing &amp; Ethical Hacking</h3>
-            <p class="service-card__desc">Our Certified Ethical Hackers (CEH) simulate real-world attacks to uncover vulnerabilities before adversaries do. We deliver detailed findings and actionable remediation steps to harden your environment.</p>
+            <h3 class="service-card__title" data-i18n="s2-title">Penetration Testing &amp; Ethical Hacking</h3>
+            <p class="service-card__desc" data-i18n="s2-desc">Our Certified Ethical Hackers (CEH) simulate real-world attacks to uncover vulnerabilities before adversaries do. We deliver detailed findings and actionable remediation steps to harden your environment.</p>
             <ul class="service-card__list">
-              <li>Network &amp; Application Penetration Testing</li>
-              <li>Social Engineering Assessments</li>
-              <li>Vulnerability Scanning &amp; Analysis</li>
-              <li>Detailed Risk Reports</li>
+              <li data-i18n="s2-li1">Network &amp; Application Penetration Testing</li>
+              <li data-i18n="s2-li2">Social Engineering Assessments</li>
+              <li data-i18n="s2-li3">Vulnerability Scanning &amp; Analysis</li>
+              <li data-i18n="s2-li4">Detailed Risk Reports</li>
             </ul>
-            <a href="#contact" class="service-card__link">Schedule a Pentest <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
+            <a href="#contact" class="service-card__link"><span data-i18n="s2-link">Schedule a Pentest</span> <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
           </div>
         </article>
 
@@ -157,15 +163,15 @@
             <div class="service-card__icon" aria-hidden="true">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
             </div>
-            <h3 class="service-card__title">Risk Management &amp; Security Strategy</h3>
-            <p class="service-card__desc">Build a resilient security posture with a comprehensive risk management strategy. Our CISSP-credentialed team aligns your security program to NIST frameworks, helping you manage threats effectively and meet regulatory obligations.</p>
+            <h3 class="service-card__title" data-i18n="s3-title">Risk Management &amp; Security Strategy</h3>
+            <p class="service-card__desc" data-i18n="s3-desc">Build a resilient security posture with a comprehensive risk management strategy. Our CISSP-credentialed team aligns your security program to NIST frameworks, helping you manage threats effectively and meet regulatory obligations.</p>
             <ul class="service-card__list">
-              <li>NIST SP 800-171 &amp; RMF Alignment</li>
-              <li>Risk Assessment &amp; Mitigation Planning</li>
-              <li>Security Policy Development</li>
-              <li>Incident Response Planning</li>
+              <li data-i18n="s3-li1">NIST SP 800-171 &amp; RMF Alignment</li>
+              <li data-i18n="s3-li2">Risk Assessment &amp; Mitigation Planning</li>
+              <li data-i18n="s3-li3">Security Policy Development</li>
+              <li data-i18n="s3-li4">Incident Response Planning</li>
             </ul>
-            <a href="#contact" class="service-card__link">Start Risk Assessment <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
+            <a href="#contact" class="service-card__link"><span data-i18n="s3-link">Start Risk Assessment</span> <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
           </div>
         </article>
 
@@ -177,15 +183,15 @@
             <div class="service-card__icon" aria-hidden="true">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
             </div>
-            <h3 class="service-card__title">Small Business Cybersecurity</h3>
-            <p class="service-card__desc">You don't need a Fortune 500 budget to have enterprise-grade security. Solnetek offers right-sized cybersecurity programs for growing businesses — protecting your data, customers, and reputation without breaking the bank.</p>
+            <h3 class="service-card__title" data-i18n="s4-title">Small Business Cybersecurity</h3>
+            <p class="service-card__desc" data-i18n="s4-desc">You don't need a Fortune 500 budget to have enterprise-grade security. Solnetek offers right-sized cybersecurity programs for growing businesses — protecting your data, customers, and reputation without breaking the bank.</p>
             <ul class="service-card__list">
-              <li>Security Awareness Training</li>
-              <li>Email &amp; Endpoint Protection</li>
-              <li>Compliance Roadmapping</li>
-              <li>vCISO Advisory Services</li>
+              <li data-i18n="s4-li1">Security Awareness Training</li>
+              <li data-i18n="s4-li2">Email &amp; Endpoint Protection</li>
+              <li data-i18n="s4-li3">Compliance Roadmapping</li>
+              <li data-i18n="s4-li4">vCISO Advisory Services</li>
             </ul>
-            <a href="#contact" class="service-card__link">Protect My Business <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
+            <a href="#contact" class="service-card__link"><span data-i18n="s4-link">Protect My Business</span> <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
           </div>
         </article>
 
@@ -197,15 +203,15 @@
             <div class="service-card__icon" aria-hidden="true">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" /></svg>
             </div>
-            <h3 class="service-card__title">Government Agency Consulting</h3>
-            <p class="service-card__desc">Solnetek supports federal, state, and local government agencies in building and maintaining robust cybersecurity programs that meet federal mandates, protect sensitive data, and uphold public trust.</p>
+            <h3 class="service-card__title" data-i18n="s5-title">Government Agency Consulting</h3>
+            <p class="service-card__desc" data-i18n="s5-desc">Solnetek supports federal, state, and local government agencies in building and maintaining robust cybersecurity programs that meet federal mandates, protect sensitive data, and uphold public trust.</p>
             <ul class="service-card__list">
-              <li>FedRAMP &amp; FISMA Readiness</li>
-              <li>Authority to Operate (ATO) Support</li>
-              <li>Continuous Monitoring Programs</li>
-              <li>Security Control Assessments</li>
+              <li data-i18n="s5-li1">FedRAMP &amp; FISMA Readiness</li>
+              <li data-i18n="s5-li2">Authority to Operate (ATO) Support</li>
+              <li data-i18n="s5-li3">Continuous Monitoring Programs</li>
+              <li data-i18n="s5-li4">Security Control Assessments</li>
             </ul>
-            <a href="#contact" class="service-card__link">Agency Inquiry <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
+            <a href="#contact" class="service-card__link"><span data-i18n="s5-link">Agency Inquiry</span> <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
           </div>
         </article>
 
@@ -215,17 +221,17 @@
           </div>
           <div class="service-card__body">
             <div class="service-card__icon" aria-hidden="true">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>
             </div>
-            <h3 class="service-card__title">Security Training &amp; Awareness</h3>
-            <p class="service-card__desc">Empower your team to be the first line of defense. Solnetek delivers customized security awareness training programs that transform employees from a vulnerability into a security asset.</p>
+            <h3 class="service-card__title" data-i18n="s6-title">Security Training &amp; Awareness</h3>
+            <p class="service-card__desc" data-i18n="s6-desc">Empower your team to be the first line of defense. Solnetek delivers customized security awareness training programs that transform employees from a vulnerability into a security asset.</p>
             <ul class="service-card__list">
-              <li>Phishing Simulation Campaigns</li>
-              <li>Role-Based Security Training</li>
-              <li>CMMC Workforce Education</li>
-              <li>Ongoing Awareness Programs</li>
+              <li data-i18n="s6-li1">Phishing Simulation Campaigns</li>
+              <li data-i18n="s6-li2">Role-Based Security Training</li>
+              <li data-i18n="s6-li3">CMMC Workforce Education</li>
+              <li data-i18n="s6-li4">Ongoing Awareness Programs</li>
             </ul>
-            <a href="#contact" class="service-card__link">Train My Team <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
+            <a href="#contact" class="service-card__link"><span data-i18n="s6-link">Train My Team</span> <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
           </div>
         </article>
 
@@ -237,11 +243,11 @@
   <section class="cta-banner" aria-label="Assessment call to action">
     <div class="container cta-banner__inner">
       <div class="cta-banner__text">
-        <h2 class="cta-banner__title">Do the math.</h2>
-        <p class="cta-banner__desc">A single data breach costs small businesses an average of $3.31 million. An assessment with Solnetek costs nothing. Schedule your free, no-obligation cybersecurity assessment today.</p>
+        <h2 class="cta-banner__title" data-i18n="cta-title">Do the math.</h2>
+        <p class="cta-banner__desc" data-i18n="cta-desc">A single data breach costs small businesses an average of $3.31 million. An assessment with Solnetek costs nothing. Schedule your free, no-obligation cybersecurity assessment today.</p>
       </div>
       <a href="#contact" class="btn btn--primary btn--lg cta-banner__btn">
-        Get Free Assessment
+        <span data-i18n="cta-btn">Get Free Assessment</span>
         <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
       </a>
     </div>
@@ -255,52 +261,52 @@
           <img src="https://solnetek.com/assets/juan-velasquez-Cl2grL7d.jpg" alt="Juan Velasquez – Solnetek founder and Lead Cybersecurity Compliance Advisor" class="about__img" loading="lazy" />
           <div class="about__img-badge">
             <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-            <span>Atlanta, GA</span>
+            <span data-i18n="about-location">Atlanta, GA</span>
           </div>
         </div>
         <div class="about__creds">
           <div class="cred-card">
             <img src="https://solnetek.com/assets/lcca-CirmyVUY.png" alt="LCCA certification badge" class="cred-card__img" loading="lazy" />
             <div class="cred-card__abbr">LCCA</div>
-            <div class="cred-card__name">Lead Cybersecurity Compliance Advisor</div>
+            <div class="cred-card__name" data-i18n="cred1-name">Lead Cybersecurity Compliance Advisor</div>
           </div>
           <div class="cred-card">
             <img src="https://solnetek.com/assets/cca-nO3QWzhs.png" alt="CCA certification badge" class="cred-card__img" loading="lazy" />
             <div class="cred-card__abbr">CCA</div>
-            <div class="cred-card__name">Certified Cybersecurity Advisor</div>
+            <div class="cred-card__name" data-i18n="cred2-name">Certified Cybersecurity Advisor</div>
           </div>
           <div class="cred-card">
             <img src="https://solnetek.com/assets/ccp-CMqLGitS.png" alt="CCP certification badge" class="cred-card__img" loading="lazy" />
             <div class="cred-card__abbr">CCP</div>
-            <div class="cred-card__name">Certified Cybersecurity Professional</div>
+            <div class="cred-card__name" data-i18n="cred3-name">Certified Cybersecurity Professional</div>
           </div>
         </div>
       </div>
 
       <div class="about__text-col">
-        <p class="section-label">About Us</p>
-        <h2 class="section-title">Mission-Ready Cybersecurity, Built for Compliance</h2>
-        <p class="about__para">Solnetek is an Atlanta-based cybersecurity and compliance consulting firm led by Juan Velasquez, a Lead CMMC Certified Assessor (LCCA). We specialize in helping Defense Industrial Base (DIB) contractors, government agencies, and small businesses build the security programs they need to win contracts, pass audits, and protect sensitive data.</p>
-        <p class="about__para">Juan Velasquez embarked on his Information Technology journey in 1995, a time when technology was just beginning to take its first steps. His foresight was evident from the start, as he grasped the significance of robust fundamental knowledge in programming, computer networks and systems, system administration, database systems, security, and web application development.</p>
-        <p class="about__para">His understanding of the role of education in safeguarding not just friends, but entire communities and national infrastructure, is a testament to the profound impact of his knowledge and expertise. As a project lead in network design, implementation, redundancy, security, compliance, regulation, and all relevant aspects of end-to-end continuity, Juan has mentored team members and tackled escalated, complex issues with proven leadership.</p>
-        <p class="about__para">He deeply appreciates the pivotal role of documentation and training — the bedrock of Solnetek's commitment to delivering successful implementations and the highest level of professional services to every client.</p>
+        <p class="section-label" data-i18n="about-label">About Us</p>
+        <h2 class="section-title" data-i18n="about-title">Mission-Ready Cybersecurity, Built for Compliance</h2>
+        <p class="about__para" data-i18n="about-p1">Solnetek is an Atlanta-based cybersecurity and compliance consulting firm led by Juan Velasquez, a Lead CMMC Certified Assessor (LCCA). We specialize in helping Defense Industrial Base (DIB) contractors, government agencies, and small businesses build the security programs they need to win contracts, pass audits, and protect sensitive data.</p>
+        <p class="about__para" data-i18n="about-p2">Juan Velasquez embarked on his Information Technology journey in 1995, a time when technology was just beginning to take its first steps. His foresight was evident from the start, as he grasped the significance of robust fundamental knowledge in programming, computer networks and systems, system administration, database systems, security, and web application development.</p>
+        <p class="about__para" data-i18n="about-p3">His understanding of the role of education in safeguarding not just friends, but entire communities and national infrastructure, is a testament to the profound impact of his knowledge and expertise. As a project lead in network design, implementation, redundancy, security, compliance, regulation, and all relevant aspects of end-to-end continuity, Juan has mentored team members and tackled escalated, complex issues with proven leadership.</p>
+        <p class="about__para" data-i18n="about-p4">He deeply appreciates the pivotal role of documentation and training — the bedrock of Solnetek's commitment to delivering successful implementations and the highest level of professional services to every client.</p>
 
         <div class="about__stats">
           <div class="stat">
             <span class="stat__num">100+</span>
-            <span class="stat__label">Clients Supported</span>
+            <span class="stat__label" data-i18n="stat1-label">Clients Supported</span>
           </div>
           <div class="stat">
             <span class="stat__num">CMMC</span>
-            <span class="stat__label">Compliance Experts</span>
+            <span class="stat__label" data-i18n="stat2-label">Compliance Experts</span>
           </div>
           <div class="stat">
             <span class="stat__num">DIB</span>
-            <span class="stat__label">Defense Industry Focus</span>
+            <span class="stat__label" data-i18n="stat3-label">Defense Industry Focus</span>
           </div>
         </div>
 
-        <a href="#contact" class="btn btn--primary">Work With Us</a>
+        <a href="#contact" class="btn btn--primary" data-i18n="about-cta">Work With Us</a>
       </div>
     </div>
   </section>
@@ -309,30 +315,30 @@
   <section class="industries">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">Who We Serve</p>
-        <h2 class="section-title">Tailored for Your Industry</h2>
+        <p class="section-label" data-i18n="ind-label">Who We Serve</p>
+        <h2 class="section-title" data-i18n="ind-title">Tailored for Your Industry</h2>
       </div>
       <div class="industries__grid">
         <div class="industry-card">
           <div class="industry-card__icon" aria-hidden="true">
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" /></svg>
           </div>
-          <h3 class="industry-card__title">Defense Industrial Base</h3>
-          <p class="industry-card__desc">CMMC compliance, DFARS 252.204-7012 adherence, and full DoD contractor support from pre-assessment to certification.</p>
+          <h3 class="industry-card__title" data-i18n="ind1-title">Defense Industrial Base</h3>
+          <p class="industry-card__desc" data-i18n="ind1-desc">CMMC compliance, DFARS 252.204-7012 adherence, and full DoD contractor support from pre-assessment to certification.</p>
         </div>
         <div class="industry-card">
           <div class="industry-card__icon" aria-hidden="true">
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" /></svg>
           </div>
-          <h3 class="industry-card__title">Government Agencies</h3>
-          <p class="industry-card__desc">Federal, state, and local government cybersecurity programs, ATO support, FedRAMP readiness, and continuous monitoring.</p>
+          <h3 class="industry-card__title" data-i18n="ind2-title">Government Agencies</h3>
+          <p class="industry-card__desc" data-i18n="ind2-desc">Federal, state, and local government cybersecurity programs, ATO support, FedRAMP readiness, and continuous monitoring.</p>
         </div>
         <div class="industry-card">
           <div class="industry-card__icon" aria-hidden="true">
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
           </div>
-          <h3 class="industry-card__title">Growing Businesses</h3>
-          <p class="industry-card__desc">Right-sized security programs, vCISO services, and compliance roadmaps that scale with your business as you grow.</p>
+          <h3 class="industry-card__title" data-i18n="ind3-title">Growing Businesses</h3>
+          <p class="industry-card__desc" data-i18n="ind3-desc">Right-sized security programs, vCISO services, and compliance roadmaps that scale with your business as you grow.</p>
         </div>
       </div>
     </div>
@@ -342,9 +348,9 @@
   <section class="contact" id="contact">
     <div class="container contact__inner">
       <div class="contact__info">
-        <p class="section-label">Get In Touch</p>
-        <h2 class="section-title">Ready to Secure Your Mission?</h2>
-        <p class="contact__intro">Schedule your free, no-obligation cybersecurity assessment. Our LCCA-led team will analyze your current posture and show you exactly where you stand — and where you need to go.</p>
+        <p class="section-label" data-i18n="contact-label">Get In Touch</p>
+        <h2 class="section-title" data-i18n="contact-title">Ready to Secure Your Mission?</h2>
+        <p class="contact__intro" data-i18n="contact-intro">Schedule your free, no-obligation cybersecurity assessment. Our LCCA-led team will analyze your current posture and show you exactly where you stand — and where you need to go.</p>
 
         <div class="contact__details">
           <a href="tel:+14044652310" class="contact-detail">
@@ -352,7 +358,7 @@
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
             </div>
             <div>
-              <p class="contact-detail__label">Call Us</p>
+              <p class="contact-detail__label" data-i18n="contact-call-label">Call Us</p>
               <p class="contact-detail__value">(404) 465-2310</p>
             </div>
           </a>
@@ -362,7 +368,7 @@
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
             </div>
             <div>
-              <p class="contact-detail__label">Email Us</p>
+              <p class="contact-detail__label" data-i18n="contact-email-label">Email Us</p>
               <p class="contact-detail__value">info@solnetek.com</p>
             </div>
           </a>
@@ -372,8 +378,8 @@
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
             </div>
             <div>
-              <p class="contact-detail__label">Location</p>
-              <p class="contact-detail__value">Atlanta, Georgia<br /><span class="contact-detail__sub">Serving Clients Nationwide</span></p>
+              <p class="contact-detail__label" data-i18n="contact-loc-label">Location</p>
+              <p class="contact-detail__value">Atlanta, Georgia<br /><span class="contact-detail__sub" data-i18n="contact-loc-sub">Serving Clients Nationwide</span></p>
             </div>
           </div>
         </div>
@@ -381,62 +387,62 @@
 
       <div class="contact__form-wrap">
         <form class="contact-form" id="contactForm" novalidate>
-          <h3 class="contact-form__title">Get Your Free Assessment</h3>
-          <p class="contact-form__note">No obligation &bull; LCCA-led &bull; Quick turnaround</p>
+          <h3 class="contact-form__title" data-i18n="form-title">Get Your Free Assessment</h3>
+          <p class="contact-form__note" data-i18n="form-note">No obligation &bull; LCCA-led &bull; Quick turnaround</p>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="firstName" class="form-label">First Name <span aria-hidden="true">*</span></label>
-              <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Jane" required autocomplete="given-name" />
+              <label for="firstName" class="form-label" data-i18n="form-fname-label">First Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Jane" required autocomplete="given-name" data-i18n-placeholder="form-fname-ph" />
             </div>
             <div class="form-group">
-              <label for="lastName" class="form-label">Last Name <span aria-hidden="true">*</span></label>
-              <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Smith" required autocomplete="family-name" />
+              <label for="lastName" class="form-label" data-i18n="form-lname-label">Last Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Smith" required autocomplete="family-name" data-i18n-placeholder="form-lname-ph" />
             </div>
           </div>
 
           <div class="form-group">
-            <label for="email" class="form-label">Business Email <span aria-hidden="true">*</span></label>
-            <input type="email" id="email" name="email" class="form-input" placeholder="jane@yourcompany.com" required autocomplete="email" />
+            <label for="email" class="form-label" data-i18n="form-email-label">Business Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="jane@yourcompany.com" required autocomplete="email" data-i18n-placeholder="form-email-ph" />
           </div>
 
           <div class="form-group">
-            <label for="phone" class="form-label">Phone Number</label>
+            <label for="phone" class="form-label" data-i18n="form-phone-label">Phone Number</label>
             <input type="tel" id="phone" name="phone" class="form-input" placeholder="(404) 555-0100" autocomplete="tel" />
           </div>
 
           <div class="form-group">
-            <label for="company" class="form-label">Company / Organization <span aria-hidden="true">*</span></label>
-            <input type="text" id="company" name="company" class="form-input" placeholder="Your Company Name" required autocomplete="organization" />
+            <label for="company" class="form-label" data-i18n="form-company-label">Company / Organization <span aria-hidden="true">*</span></label>
+            <input type="text" id="company" name="company" class="form-input" placeholder="Your Company Name" required autocomplete="organization" data-i18n-placeholder="form-company-ph" />
           </div>
 
           <div class="form-group">
-            <label for="service" class="form-label">I'm interested in...</label>
+            <label for="service" class="form-label" data-i18n="form-service-label">I'm interested in...</label>
             <select id="service" name="service" class="form-input form-select">
-              <option value="">Select a service</option>
-              <option value="cmmc">CMMC Compliance Consulting</option>
-              <option value="pentest">Penetration Testing</option>
-              <option value="risk">Risk Management &amp; Strategy</option>
-              <option value="small-biz">Small Business Cybersecurity</option>
-              <option value="government">Government Agency Consulting</option>
-              <option value="training">Security Training &amp; Awareness</option>
-              <option value="assessment">Free Assessment (Not Sure)</option>
+              <option value="" data-i18n="form-opt0">Select a service</option>
+              <option value="cmmc" data-i18n="form-opt1">CMMC Compliance Consulting</option>
+              <option value="pentest" data-i18n="form-opt2">Penetration Testing</option>
+              <option value="risk" data-i18n="form-opt3">Risk Management &amp; Strategy</option>
+              <option value="small-biz" data-i18n="form-opt4">Small Business Cybersecurity</option>
+              <option value="government" data-i18n="form-opt5">Government Agency Consulting</option>
+              <option value="training" data-i18n="form-opt6">Security Training &amp; Awareness</option>
+              <option value="assessment" data-i18n="form-opt7">Free Assessment (Not Sure)</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="message" class="form-label">Tell us about your needs</label>
-            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Briefly describe your organization's security goals or compliance challenges..." rows="4"></textarea>
+            <label for="message" class="form-label" data-i18n="form-msg-label">Tell us about your needs</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Briefly describe your organization's security goals or compliance challenges..." rows="4" data-i18n-placeholder="form-msg-ph"></textarea>
           </div>
 
           <button type="submit" class="btn btn--primary btn--full">
-            Request Free Assessment
+            <span data-i18n="form-submit">Request Free Assessment</span>
             <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
           </button>
 
           <div class="form-success" id="formSuccess" aria-live="polite" hidden>
             <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-            <p>Thank you! We'll be in touch within one business day.</p>
+            <p data-i18n="form-success">Thank you! We'll be in touch within one business day.</p>
           </div>
         </form>
       </div>
@@ -451,8 +457,8 @@
           <img src="https://solnetek.com/assets/shield-icon-BOQRQ39B.png" alt="Solnetek shield logo" class="logo__icon" />
           <span class="logo__text">SOLNETEK</span>
         </a>
-        <p class="footer__tagline">Cybersecurity &amp; Compliance for Every Mission.</p>
-        <p class="footer__address">Atlanta, Georgia &mdash; Serving Clients Nationwide</p>
+        <p class="footer__tagline" data-i18n="footer-tagline">Cybersecurity &amp; Compliance for Every Mission.</p>
+        <p class="footer__address" data-i18n="footer-address">Atlanta, Georgia &mdash; Serving Clients Nationwide</p>
         <div class="footer__contact-links">
           <a href="tel:+14044652310" class="footer__contact-link">(404) 465-2310</a>
           <a href="mailto:info@solnetek.com" class="footer__contact-link">info@solnetek.com</a>
@@ -461,32 +467,32 @@
 
       <div class="footer__links">
         <div class="footer__col">
-          <h4 class="footer__col-title">Services</h4>
+          <h4 class="footer__col-title" data-i18n="footer-services-hd">Services</h4>
           <ul class="footer__list">
-            <li><a href="#services" class="footer__link">CMMC Compliance</a></li>
-            <li><a href="#services" class="footer__link">Penetration Testing</a></li>
-            <li><a href="#services" class="footer__link">Risk Management</a></li>
-            <li><a href="#services" class="footer__link">Small Business Security</a></li>
-            <li><a href="#services" class="footer__link">Government Consulting</a></li>
-            <li><a href="#services" class="footer__link">Security Training</a></li>
+            <li><a href="#services" class="footer__link" data-i18n="footer-s1">CMMC Compliance</a></li>
+            <li><a href="#services" class="footer__link" data-i18n="footer-s2">Penetration Testing</a></li>
+            <li><a href="#services" class="footer__link" data-i18n="footer-s3">Risk Management</a></li>
+            <li><a href="#services" class="footer__link" data-i18n="footer-s4">Small Business Security</a></li>
+            <li><a href="#services" class="footer__link" data-i18n="footer-s5">Government Consulting</a></li>
+            <li><a href="#services" class="footer__link" data-i18n="footer-s6">Security Training</a></li>
           </ul>
         </div>
         <div class="footer__col">
-          <h4 class="footer__col-title">Company</h4>
+          <h4 class="footer__col-title" data-i18n="footer-company-hd">Company</h4>
           <ul class="footer__list">
-            <li><a href="#about" class="footer__link">About Us</a></li>
-            <li><a href="#contact" class="footer__link">Contact</a></li>
-            <li><a href="#contact" class="footer__link">Free Assessment</a></li>
+            <li><a href="#about" class="footer__link" data-i18n="footer-c1">About Us</a></li>
+            <li><a href="#contact" class="footer__link" data-i18n="footer-c2">Contact</a></li>
+            <li><a href="#contact" class="footer__link" data-i18n="footer-c3">Free Assessment</a></li>
           </ul>
         </div>
         <div class="footer__col">
-          <h4 class="footer__col-title">Credentials</h4>
+          <h4 class="footer__col-title" data-i18n="footer-creds-hd">Credentials</h4>
           <ul class="footer__list">
-            <li class="footer__list-item">LCCA-Led</li>
-            <li class="footer__list-item">Certified Ethical Hacker (CEH)</li>
-            <li class="footer__list-item">CISSP</li>
-            <li class="footer__list-item">CMMC Compliance</li>
-            <li class="footer__list-item">NIST SP 800-171</li>
+            <li class="footer__list-item" data-i18n="footer-cr1">LCCA-Led</li>
+            <li class="footer__list-item" data-i18n="footer-cr2">Certified Ethical Hacker (CEH)</li>
+            <li class="footer__list-item" data-i18n="footer-cr3">CISSP</li>
+            <li class="footer__list-item" data-i18n="footer-cr4">CMMC Compliance</li>
+            <li class="footer__list-item" data-i18n="footer-cr5">NIST SP 800-171</li>
           </ul>
         </div>
       </div>
@@ -494,10 +500,10 @@
 
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p class="footer__copy">&copy; <span id="year"></span> Solnetek. All rights reserved.</p>
+        <p class="footer__copy">&copy; <span id="year"></span> Solnetek. <span data-i18n="footer-rights">All rights reserved.</span></p>
         <div class="footer__legal">
-          <a href="#" class="footer__legal-link">Privacy Policy</a>
-          <a href="#" class="footer__legal-link">Terms of Service</a>
+          <a href="#" class="footer__legal-link" data-i18n="footer-privacy">Privacy Policy</a>
+          <a href="#" class="footer__legal-link" data-i18n="footer-terms">Terms of Service</a>
         </div>
       </div>
     </div>
